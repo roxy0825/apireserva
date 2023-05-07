@@ -1,7 +1,9 @@
 import {ServicioReserva} from "../service/ServicioReserva.js"
 
 export class ControladorReservas{
+
     constructor(){}
+    
    async registrandoReserva(peticion,respuesta){
         let objetoservicioReserva= new ServicioReserva()
 

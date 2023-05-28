@@ -1,7 +1,7 @@
 import { ServicioHabitacion } from "../service/ServicioHabitacion.js"
 export class ControladorHabitaciones {
 
-    constructor() { }
+    constructor() {}
 
     async registrandoHabitacion(peticion, respuesta) {
         let objetoservicioHabitacion = new ServicioHabitacion()

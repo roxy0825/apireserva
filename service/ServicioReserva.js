@@ -3,16 +3,16 @@ import {modeloReserva}from "../models/modeloReserva.js"
 export class ServicioReserva {
     constructor(){}
         async registrar (datosReserva){
-            let reservaNueva=new modeloReserva(datosReserva)
-            return await reservaNueva.save()
+            let reservaNueva = new modeloReserva(datosReserva)
+            return await reservaNueva.save();
         }
        async buscarTodas(){
-            let habitaciones = await modeloReserva.find()
-            return habitaciones
+            let buscandoReservas = await modeloReserva.find()
+            return buscandoReservas
         }
        async buscarPorId(idReserva){
-            let habitacion = await modeloReserva.findById(idReserva)
-            return habitacion
+            let reservaId = await modeloReserva.findById(idReserva)
+            return reservaId
         }
         
         async editar(idReserva,datosReserva){

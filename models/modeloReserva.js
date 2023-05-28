@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 const Reserva =new Schema({
     id:{
-        type:Number,
+        type:String,
         required:true
     },
     nombre:{
@@ -35,6 +35,10 @@ const Reserva =new Schema({
         required:true
     },
     numeroadulto:{
+        type:Number,
+        required:true
+    },
+    total:{
         type:Number,
         required:true
     },

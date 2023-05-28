@@ -22,7 +22,7 @@ const Reserva =new Schema({
         type:Date,
         required:true
     },
-    fechafina:{
+    fechafinal:{
         type:Date,
         required:true
     },
